@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 
 import { Box } from "@mui/material";
-import { Typography } from "@mui/material";
 export default class Jemis extends Component {
   render() {
     return (

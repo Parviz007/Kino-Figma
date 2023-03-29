@@ -8,6 +8,7 @@ import Farsash from "./figma/Farsash/Farsash";
 import Mashxur from "./figma/mashxur/Mashxur";
 import Akyiyori from "./figma/Akriyori/Akyiyori";
 import Jemis from "./figma/jemis/Jemis";
+import Finish from "./figma/Finish/finish";
 function App() {
   return (
     <div className="App">
@@ -28,8 +29,17 @@ function App() {
           <Farsash />
           <Mashxur />
           <Akyiyori />
-          <Jemis/>
+          <Jemis />
         </Container>
+        <Box
+          sx={{
+            background: "#151A26",
+          }}
+        >
+          <Container>
+            <Finish />
+          </Container>
+        </Box>
       </Box>
     </div>
   );

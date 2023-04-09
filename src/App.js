@@ -1,14 +1,12 @@
 import { Container } from "@mui/material";
 import { Box } from "@mui/system";
 import "./App.css";
-import XozirKino from "./figma/Kino1/XozirKino";
-import Navbar from "./figma/Navbar/Navbar";
 import backgraund from "./figma/Kino1/bacgraundjocer.png";
-import Farsash from "./figma/Farsash/Farsash";
-import Mashxur from "./figma/mashxur/Mashxur";
-import Akyiyori from "./figma/Akriyori/Akyiyori";
-import Jemis from "./figma/jemis/Jemis";
-import Finish from "./figma/Finish/finish";
+import Figmaikki from "./Figmaikki/Figmaikki";
+import { Route, Routes } from "react-router-dom";
+import Navbar from "./figma/Navbar/Navbar";
+import Section_salom from "./figma/Section_1";
+
 function App() {
   return (
     <div className="App">
@@ -23,22 +21,17 @@ function App() {
           backgroundRepeat: "no-repeat",
         }}
       >
-        <Container>
-          <Navbar />
-          <XozirKino />
-          <Farsash />
-          <Mashxur />
-          <Akyiyori />
-          <Jemis />
-        </Container>
-        <Box
-          sx={{
-            background: "#151A26",
-          }}
-        >
+        {" "}
+        <Box>
           <Container>
-            <Finish />
+            <Navbar />
           </Container>
+
+          <Routes>
+            <Route path="/" element={<Section_salom />} />
+            {/* <Route path="/Figmaikki" element={<Figmaikki />} /> */}
+            {/* <Container></Container> */}
+          </Routes>
         </Box>
       </Box>
     </div>

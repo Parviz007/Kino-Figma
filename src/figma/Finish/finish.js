@@ -12,12 +12,16 @@ import fotojocera11 from "./kinomini3.png";
 import fotojocera12 from "./kinomini4.png";
 import fotoblue from "./bluefont.png";
 import brend from "./brend.svg";
+import Checkbox from "@mui/material/Checkbox";
+import emblema from "./emblema.svg";
 // eslint-disable-next-line import/no-anonymous-default-export
 export default class extends Component {
   render() {
     return (
       <div>
-        <Box>
+        <Box
+         
+        >
           <Box
             sx={{
               display: "flex",
@@ -424,11 +428,56 @@ export default class extends Component {
                 >
                   Подписаться
                 </Box>
-                <Box>
-                  <Typography>  </Typography>
-                </Box>
+              </Box>
+              <Box
+                alignItems={"center"}
+                fontSize={"18px"}
+                gap={"5px"}
+                sx={{ display: "flex" }}
+              >
+                <Checkbox></Checkbox>
+                <Typography color={"#FFFFFF"}>
+                  Соглашаюсь на условия{" "}
+                </Typography>
+                <Typography color={"#F2F60F"}>
+                  политики конфиденциальности
+                </Typography>{" "}
               </Box>
             </Box>
+          </Box>
+
+          <Box
+            sx={{ display: "flex" }}
+            flexDirection={"column"}
+            textAlign={"center"}
+            padding={"50px"}
+            justifyContent={"center"}
+            alignItems={"center"}
+            gap={"25px"}
+          >
+            <Box>
+              <img src={emblema} alt="" />
+            </Box>
+            <Box
+              textAlign={"center"}
+              sx={{ display: "flex" }}
+              gap={"55px"}
+              color={"#FFFFFF"}
+            >
+              <Typography>Афиша фильмов</Typography>
+              <Typography> Новости </Typography>
+              <Typography> Персоны </Typography>
+              <Typography> Рейтинги </Typography>
+              <Typography> Рецензии </Typography>
+              <Typography> Каталог</Typography>
+              <Typography> фильмов</Typography>
+            </Box>{" "}
+            <Typography color={"#969AA6"}>
+              2020 © Kinoarea. Все права защищены
+            </Typography>
+            <Typography borderBottom={"solid #969AA6 3  px"} color={"#969AA6"}>
+              Политика конфиденциальности
+            </Typography>
           </Box>
         </Box>
       </div>

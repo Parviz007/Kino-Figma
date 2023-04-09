@@ -4,6 +4,7 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { Box } from "@mui/material";
+import { BrowserRouter } from "react-router-dom";
 import(
   "https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@600;700&family=Public+Sans:wght@500&family=Roboto:wght@400;500;700;900&display=swap"
 );
@@ -11,9 +12,9 @@ import(
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <Box height={"1000vh"} bgcolor={"#1e2538"}>
+    <BrowserRouter>
       <App />
-    </Box>
+    </BrowserRouter>
   </React.StrictMode>
 );
 

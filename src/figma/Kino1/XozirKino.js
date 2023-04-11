@@ -12,7 +12,7 @@ import foto8 from "./palitsya.png";
 class XozirKino extends Component {
   render() {
     return (
-      <Box>
+      <Box >
         <Box
           display={"flex"}
           justifyContent={"space-between"}

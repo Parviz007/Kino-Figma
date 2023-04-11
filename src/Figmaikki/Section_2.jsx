@@ -1,20 +1,16 @@
 import React, { Component } from "react";
+import Start from "./start/Start.js";
 import { Typography } from "@mui/material";
+
+
 import { Box } from "@mui/material";
-export default class Start extends Component {
-
-
+export default class Section_2 extends Component {
   render() {
-
-    console.log("salom");
-
-    return;
-    <Box>
+    return (
       <Box>
-        <Box>
-          <Typography>График премьер фильмов</Typography>
-          <Typography></Typography>
-          <Typography color={"red"}>
+        <Start />
+
+        <Typography color={"red"}>
             Также как дальнейшее развитие различных форм деятельности, в своём
             классическом представлении, допускает внедрение первоочередных
             требований. Современные технологии достигли такого уровня, что
@@ -23,16 +19,7 @@ export default class Start extends Component {
             могут быть объявлены нарушающими общечеловеческие нормы этики и
             морали.
           </Typography>
-        </Box>
-        <Box>
-          <Box>
-            <Typography>Боевик, Детектив...</Typography>
-          </Box>
-          <Box>
-            <Typography></Typography>
-          </Box>
-        </Box>
       </Box>
-    </Box>;
+    );
   }
 }

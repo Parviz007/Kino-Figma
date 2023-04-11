@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Box } from "@mui/material";
 import kinoEmblema from "./kinoEmblema.svg";
 import { Typography } from "@mui/material";
-import { Link, Routes } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 class Navbar extends Component {
   render() {
@@ -17,19 +17,17 @@ class Navbar extends Component {
         display={"flex"}
       >
         <Box>
-          <Routes>
-            <Box gap={"5px"} display={"flex"} alignItems={"center"}>
-              <img src={kinoEmblema} alt="" />
-              <Link to={"/"}>
-                <Typography variant="p" color="#3657CB" fontSize={"25px"}>
-                  Kino
-                </Typography>
-              </Link>
+          <Box gap={"5px"} display={"flex"} alignItems={"center"}>
+            <img src={kinoEmblema} alt="" />
+            <Link to={"/"}>
+              <Typography variant="p" color="#3657CB" fontSize={"25px"}>
+                Kino
+              </Typography>
               <Typography variant="p" color="#FFFFFF" fontSize={"25px"}>
                 area
               </Typography>
-            </Box>
-          </Routes>
+            </Link>
+          </Box>
 
           <Box
             display={"flex"}
@@ -59,7 +57,7 @@ class Navbar extends Component {
             display={"flex"}
             gap={"20px"}
           >
-            <Link to="/Figmaikki">
+            <Link to="/afisha">
               <li>Афиша</li>
             </Link>
             <li>Медиа</li>
